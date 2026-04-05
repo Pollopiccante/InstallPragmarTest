@@ -19,21 +19,28 @@ class ScenarioRunner:
         self.gen_directory = self._directory_path + "/gen/"
 
     def delete_generated_files(self):
+        print(f"    DELETING FILES IN: {self.gen_directory}")
         delete_files_in_folder(self.gen_directory)
 
     def run_grammar(self):
+        print(f"    RUNNING Grammar: {self.grammar_subpath}")
         return run_python_file(self.grammar_subpath)
 
     def run_attributes(self):
+        print(f"    RUNNING Attributes: {self.attributes_subpath}")
         return run_python_file(self.attributes_subpath)
 
     def run_use(self):
+        print(f"    RUNNING Use: {self.use_subpath}")
         return run_python_file(self.use_subpath)
 
     def run_all(self):
+        print(f"RUNNING SCENARIO: {self.gen_directory}")
+        self.delete_generated_files()
         g = self.run_grammar()
         a = self.run_attributes()
         u = self.run_use()
+        print(f"    OUTPUT: {g} {a} {u}")
         return [g, a, u]
 
     def check(self, asserter):
@@ -41,6 +48,7 @@ class ScenarioRunner:
         asserter.assertEqual(0, grammar, "Grammar Generation did not succeed")
         asserter.assertEqual(0, attributes, "Attribute Generation did not succeed")
         asserter.assertEqual(0, use, "UseCase did not succeed")
+        print(f"    SCENARIO passed")
 
 
 def run_python_file(file_path: str) -> int:

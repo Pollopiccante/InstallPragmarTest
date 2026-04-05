@@ -23,7 +23,7 @@
 #   |   |       |               <GrammarFields>
 #   |   |       |               |---#AttrDefinitionValuePart#
 #   |   |       |               |   <BasicAttributes>
-#   |   |       |               |   |---function: <function get_super_type at 0x7419b53a0ea0>
+#   |   |       |               |   |---function: <function get_super_type at 0x7628231a1080>
 #   |   |       |               |---#AttrDefinitionTypePart#
 #   |   |       |                   <BasicAttributes>
 #   |   |       |                   |---def_type: Node
@@ -32,7 +32,7 @@
 #   |   |       |                       <GrammarFields>
 #   |   |       |                       |---#AttrDefinitionValuePart#
 #   |   |       |                           <BasicAttributes>
-#   |   |       |                           |---function: <function get_super_type at 0x7419b53a11c0>
+#   |   |       |                           |---function: <function get_super_type at 0x7628231a13a0>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |       |   <BasicAttributes>
 #   |   |       |   |---attr_name: get_rule_for_type
@@ -47,7 +47,7 @@
 #   |   |       |               <GrammarFields>
 #   |   |       |               |---#AttrDefinitionValuePart#
 #   |   |       |               |   <BasicAttributes>
-#   |   |       |               |   |---function: <function get_rule_for_type at 0x7419b53a0e00>
+#   |   |       |               |   |---function: <function get_rule_for_type at 0x7628231a0fe0>
 #   |   |       |               |---#AttrDefinitionTypePart#
 #   |   |       |                   <BasicAttributes>
 #   |   |       |                   |---def_type: Node
@@ -56,7 +56,7 @@
 #   |   |       |                       <GrammarFields>
 #   |   |       |                       |---#AttrDefinitionValuePart#
 #   |   |       |                           <BasicAttributes>
-#   |   |       |                           |---function: <function get_rule_for_type at 0x7419b53a1580>
+#   |   |       |                           |---function: <function get_rule_for_type at 0x7628231a1760>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |       |   <BasicAttributes>
 #   |   |       |   |---attr_name: is_subtype_of
@@ -71,7 +71,7 @@
 #   |   |       |               <GrammarFields>
 #   |   |       |               |---#AttrDefinitionValuePart#
 #   |   |       |               |   <BasicAttributes>
-#   |   |       |               |   |---function: <function is_subtype_of at 0x7419b53a1120>
+#   |   |       |               |   |---function: <function is_subtype_of at 0x7628231a1300>
 #   |   |       |               |---#AttrDefinitionTypePart#
 #   |   |       |                   <BasicAttributes>
 #   |   |       |                   |---def_type: Node
@@ -80,7 +80,7 @@
 #   |   |       |                       <GrammarFields>
 #   |   |       |                       |---#AttrDefinitionValuePart#
 #   |   |       |                           <BasicAttributes>
-#   |   |       |                           |---function: <function is_subtype_of at 0x7419b53a1940>
+#   |   |       |                           |---function: <function is_subtype_of at 0x7628231a1b20>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |       |   <BasicAttributes>
 #   |   |       |   |---attr_name: get_all_subtypes_of_type
@@ -101,7 +101,7 @@
 #   |   |       |                       <GrammarFields>
 #   |   |       |                       |---#AttrDefinitionValuePart#
 #   |   |       |                           <BasicAttributes>
-#   |   |       |                           |---function: <function get_all_subtypes_of_type at 0x7419b53a1bc0>
+#   |   |       |                           |---function: <function get_all_subtypes_of_type at 0x7628231a1da0>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |       |   <BasicAttributes>
 #   |   |       |   |---attr_name: get_all_reachable_types_of_type
@@ -122,7 +122,7 @@
 #   |   |       |                       <GrammarFields>
 #   |   |       |                       |---#AttrDefinitionValuePart#
 #   |   |       |                           <BasicAttributes>
-#   |   |       |                           |---function: <function get_all_reachable_types_of_type at 0x7419b53a1f80>
+#   |   |       |                           |---function: <function get_all_reachable_types_of_type at 0x7628231a2160>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |       |   <BasicAttributes>
 #   |   |       |   |---attr_name: get_all_fields
@@ -137,7 +137,7 @@
 #   |   |       |               <GrammarFields>
 #   |   |       |               |---#AttrDefinitionValuePart#
 #   |   |       |                   <BasicAttributes>
-#   |   |       |                   |---function: <function get_all_fields at 0x7419b53a2340>
+#   |   |       |                   |---function: <function get_all_fields at 0x7628231a2520>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |       |   <BasicAttributes>
 #   |   |       |   |---attr_name: check_grammar
@@ -152,7 +152,7 @@
 #   |   |       |       |       <GrammarFields>
 #   |   |       |       |       |---#AttrDefinitionValuePart#
 #   |   |       |       |           <BasicAttributes>
-#   |   |       |       |           |---function: <function check_grammar at 0x7419b53a2520>
+#   |   |       |       |           |---function: <function check_grammar at 0x7628231a2700>
 #   |   |       |       |---#AttrDefinitionTypePart#
 #   |   |       |           <BasicAttributes>
 #   |   |       |           |---def_type: Grammar
@@ -161,7 +161,7 @@
 #   |   |       |               <GrammarFields>
 #   |   |       |               |---#AttrDefinitionValuePart#
 #   |   |       |                   <BasicAttributes>
-#   |   |       |                   |---function: <function check_grammar at 0x7419b53a27a0>
+#   |   |       |                   |---function: <function check_grammar at 0x7628231a2980>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |           <BasicAttributes>
 #   |   |           |---attr_name: fits_grammar_rule
@@ -176,7 +176,7 @@
 #   |   |                       <GrammarFields>
 #   |   |                       |---#AttrDefinitionValuePart#
 #   |   |                           <BasicAttributes>
-#   |   |                           |---function: <function fits_grammar_rule at 0x7419b53a22a0>
+#   |   |                           |---function: <function fits_grammar_rule at 0x7628231a2480>
 #   |   |---#Aspect#
 #   |   |   <BasicAttributes>
 #   |   |   |---aspect_name: gen
@@ -197,7 +197,7 @@
 #   |   |       |       |       <GrammarFields>
 #   |   |       |       |       |---#AttrDefinitionValuePart#
 #   |   |       |       |           <BasicAttributes>
-#   |   |       |       |           |---function: <function load.<locals>.generate_class_helpers at 0x7419b5df9f80>
+#   |   |       |       |           |---function: <function load.<locals>.generate_class_helpers at 0x762823a02020>
 #   |   |       |       |---#AttrDefinitionTypePart#
 #   |   |       |           <BasicAttributes>
 #   |   |       |           |---def_type: Grammar
@@ -206,7 +206,7 @@
 #   |   |       |               <GrammarFields>
 #   |   |       |               |---#AttrDefinitionValuePart#
 #   |   |       |                   <BasicAttributes>
-#   |   |       |                   |---function: <function load.<locals>.generate_class_helpers at 0x7419b51e2160>
+#   |   |       |                   |---function: <function load.<locals>.generate_class_helpers at 0x762822fe2340>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |       |   <BasicAttributes>
 #   |   |       |   |---attr_name: iterate_ancestors_of_type
@@ -221,7 +221,7 @@
 #   |   |       |               <GrammarFields>
 #   |   |       |               |---#AttrDefinitionValuePart#
 #   |   |       |               |   <BasicAttributes>
-#   |   |       |               |   |---function: <function load.<locals>.iterate_ancestors_of_type at 0x7419b51e20c0>
+#   |   |       |               |   |---function: <function load.<locals>.iterate_ancestors_of_type at 0x762822fe22a0>
 #   |   |       |               |---#AttrDefinitionTypePart#
 #   |   |       |                   <BasicAttributes>
 #   |   |       |                   |---def_type: Node
@@ -230,7 +230,7 @@
 #   |   |       |                       <GrammarFields>
 #   |   |       |                       |---#AttrDefinitionValuePart#
 #   |   |       |                           <BasicAttributes>
-#   |   |       |                           |---function: <function load.<locals>.iterate_ancestors_of_type at 0x7419b51e25c0>
+#   |   |       |                           |---function: <function load.<locals>.iterate_ancestors_of_type at 0x762822fe27a0>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |       |   <BasicAttributes>
 #   |   |       |   |---attr_name: generate_node_helpers
@@ -245,7 +245,7 @@
 #   |   |       |               <GrammarFields>
 #   |   |       |               |---#AttrDefinitionValuePart#
 #   |   |       |                   <BasicAttributes>
-#   |   |       |                   |---function: <function load.<locals>.generate_node_helpers at 0x7419b51e2520>
+#   |   |       |                   |---function: <function load.<locals>.generate_node_helpers at 0x762822fe2700>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |       |   <BasicAttributes>
 #   |   |       |   |---attr_name: get_aspect_name
@@ -266,7 +266,7 @@
 #   |   |       |                       <GrammarFields>
 #   |   |       |                       |---#AttrDefinitionValuePart#
 #   |   |       |                           <BasicAttributes>
-#   |   |       |                           |---function: <function load.<locals>.get_aspect_name at 0x7419b51e2980>
+#   |   |       |                           |---function: <function load.<locals>.get_aspect_name at 0x762822fe2b60>
 #   |   |       |---#AttrDefinitionRootPart#
 #   |   |           <BasicAttributes>
 #   |   |           |---attr_name: get_type_accessible_from
@@ -281,7 +281,7 @@
 #   |   |               |       <GrammarFields>
 #   |   |               |       |---#AttrDefinitionValuePart#
 #   |   |               |           <BasicAttributes>
-#   |   |               |           |---function: <function load.<locals>.get_type_accessible_from at 0x7419b51e2ca0>
+#   |   |               |           |---function: <function load.<locals>.get_type_accessible_from at 0x762822fe2e80>
 #   |   |               |---#AttrDefinitionTypePart#
 #   |   |                   <BasicAttributes>
 #   |   |                   |---def_type: AttrDefinitionNamePart
@@ -290,7 +290,7 @@
 #   |   |                       <GrammarFields>
 #   |   |                       |---#AttrDefinitionValuePart#
 #   |   |                           <BasicAttributes>
-#   |   |                           |---function: <function load.<locals>.get_type_accessible_from at 0x7419b51e2fc0>
+#   |   |                           |---function: <function load.<locals>.get_type_accessible_from at 0x762822fe31a0>
 #   |   |---#Aspect#
 #   |       <BasicAttributes>
 #   |       |---aspect_name: print_ast
@@ -311,7 +311,7 @@
 #   |           |               <GrammarFields>
 #   |           |               |---#AttrDefinitionValuePart#
 #   |           |                   <BasicAttributes>
-#   |           |                   |---function: <function load.<locals>.depth at 0x7419b51e2700>
+#   |           |                   |---function: <function load.<locals>.depth at 0x762822fe28e0>
 #   |           |---#AttrDefinitionRootPart#
 #   |               <BasicAttributes>
 #   |               |---attr_name: print_tree
@@ -326,7 +326,7 @@
 #   |                           <GrammarFields>
 #   |                           |---#AttrDefinitionValuePart#
 #   |                               <BasicAttributes>
-#   |                               |---function: <function load.<locals>.print_tree at 0x7419b51e3420>
+#   |                               |---function: <function load.<locals>.print_tree at 0x762822fe3600>
 #   |---#Grammar#
 #   |   <GrammarFields>
 #   |   |---#ClassNode#
@@ -782,53 +782,53 @@ class _AllParent(_RefinableDecorator):
 
     # Unnamed Fields
     @cached_property
-    def Aspect(self):
-        return _Aspect(self, self._on_define)
-    @cached_property
-    def D(self):
-        return _D(self, self._on_define)
-    @cached_property
-    def AttrDefinitionRootPart(self):
-        return _AttrDefinitionRootPart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionValuePart(self):
-        return _AttrDefinitionValuePart(self, self._on_define)
-    @cached_property
-    def Rule(self):
-        return _Rule(self, self._on_define)
-    @cached_property
-    def Field(self):
-        return _Field(self, self._on_define)
+    def AttrDefinitionPartInner(self):
+        return _AttrDefinitionPartInner(self, self._on_define)
     @cached_property
     def C(self):
         return _C(self, self._on_define)
     @cached_property
-    def AttrDefinitionTypePart(self):
-        return _AttrDefinitionTypePart(self, self._on_define)
+    def Field(self):
+        return _Field(self, self._on_define)
     @cached_property
-    def ClassNode(self):
-        return _ClassNode(self, self._on_define)
+    def D(self):
+        return _D(self, self._on_define)
+    @cached_property
+    def A(self):
+        return _A(self, self._on_define)
+    @cached_property
+    def AttrDefinitionRootPart(self):
+        return _AttrDefinitionRootPart(self, self._on_define)
     @cached_property
     def ASTNode(self):
         return _ASTNode(self, self._on_define)
     @cached_property
-    def Grammar(self):
-        return _Grammar(self, self._on_define)
+    def B(self):
+        return _B(self, self._on_define)
     @cached_property
-    def AttrDefinitionNamePart(self):
-        return _AttrDefinitionNamePart(self, self._on_define)
+    def ClassNode(self):
+        return _ClassNode(self, self._on_define)
+    @cached_property
+    def Rule(self):
+        return _Rule(self, self._on_define)
     @cached_property
     def AttrDefinitionPart(self):
         return _AttrDefinitionPart(self, self._on_define)
     @cached_property
-    def B(self):
-        return _B(self, self._on_define)
+    def AttrDefinitionNamePart(self):
+        return _AttrDefinitionNamePart(self, self._on_define)
     @cached_property
-    def AttrDefinitionPartInner(self):
-        return _AttrDefinitionPartInner(self, self._on_define)
+    def Grammar(self):
+        return _Grammar(self, self._on_define)
     @cached_property
-    def A(self):
-        return _A(self, self._on_define)
+    def Aspect(self):
+        return _Aspect(self, self._on_define)
+    @cached_property
+    def AttrDefinitionValuePart(self):
+        return _AttrDefinitionValuePart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionTypePart(self):
+        return _AttrDefinitionTypePart(self, self._on_define)
     # Named Fields
     @cached_property
     def Attributes(self):
@@ -889,23 +889,23 @@ class _Aspect(_RefinableDecorator):
 
     # Unnamed Fields
     @cached_property
-    def AttrDefinitionRootPart(self):
-        return _AttrDefinitionRootPart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionValuePart(self):
-        return _AttrDefinitionValuePart(self, self._on_define)
-    @cached_property
     def AttrDefinitionTypePart(self):
         return _AttrDefinitionTypePart(self, self._on_define)
     @cached_property
-    def AttrDefinitionNamePart(self):
-        return _AttrDefinitionNamePart(self, self._on_define)
+    def AttrDefinitionPartInner(self):
+        return _AttrDefinitionPartInner(self, self._on_define)
     @cached_property
     def AttrDefinitionPart(self):
         return _AttrDefinitionPart(self, self._on_define)
     @cached_property
-    def AttrDefinitionPartInner(self):
-        return _AttrDefinitionPartInner(self, self._on_define)
+    def AttrDefinitionNamePart(self):
+        return _AttrDefinitionNamePart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionValuePart(self):
+        return _AttrDefinitionValuePart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionRootPart(self):
+        return _AttrDefinitionRootPart(self, self._on_define)
 
 
 class _AttrDefinitionPart(_RefinableDecorator):
@@ -919,23 +919,23 @@ class _AttrDefinitionPartInner(_RefinableDecorator):
 
     # Unnamed Fields
     @cached_property
-    def AttrDefinitionRootPart(self):
-        return _AttrDefinitionRootPart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionValuePart(self):
-        return _AttrDefinitionValuePart(self, self._on_define)
-    @cached_property
     def AttrDefinitionTypePart(self):
         return _AttrDefinitionTypePart(self, self._on_define)
     @cached_property
-    def AttrDefinitionNamePart(self):
-        return _AttrDefinitionNamePart(self, self._on_define)
+    def AttrDefinitionPartInner(self):
+        return _AttrDefinitionPartInner(self, self._on_define)
     @cached_property
     def AttrDefinitionPart(self):
         return _AttrDefinitionPart(self, self._on_define)
     @cached_property
-    def AttrDefinitionPartInner(self):
-        return _AttrDefinitionPartInner(self, self._on_define)
+    def AttrDefinitionNamePart(self):
+        return _AttrDefinitionNamePart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionValuePart(self):
+        return _AttrDefinitionValuePart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionRootPart(self):
+        return _AttrDefinitionRootPart(self, self._on_define)
     # Named Fields
     @cached_property
     def sub_defs(self):
@@ -948,23 +948,23 @@ class _AttrDefinitionRootPart(_RefinableDecorator):
 
     # Unnamed Fields
     @cached_property
+    def AttrDefinitionPartInner(self):
+        return _AttrDefinitionPartInner(self, self._on_define)
+    @cached_property
     def AttrDefinitionRootPart(self):
         return _AttrDefinitionRootPart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionPart(self):
+        return _AttrDefinitionPart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionNamePart(self):
+        return _AttrDefinitionNamePart(self, self._on_define)
     @cached_property
     def AttrDefinitionValuePart(self):
         return _AttrDefinitionValuePart(self, self._on_define)
     @cached_property
     def AttrDefinitionTypePart(self):
         return _AttrDefinitionTypePart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionNamePart(self):
-        return _AttrDefinitionNamePart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionPart(self):
-        return _AttrDefinitionPart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionPartInner(self):
-        return _AttrDefinitionPartInner(self, self._on_define)
     # Named Fields
     @cached_property
     def sub_defs(self):
@@ -977,23 +977,23 @@ class _AttrDefinitionTypePart(_RefinableDecorator):
 
     # Unnamed Fields
     @cached_property
+    def AttrDefinitionPartInner(self):
+        return _AttrDefinitionPartInner(self, self._on_define)
+    @cached_property
     def AttrDefinitionRootPart(self):
         return _AttrDefinitionRootPart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionPart(self):
+        return _AttrDefinitionPart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionNamePart(self):
+        return _AttrDefinitionNamePart(self, self._on_define)
     @cached_property
     def AttrDefinitionValuePart(self):
         return _AttrDefinitionValuePart(self, self._on_define)
     @cached_property
     def AttrDefinitionTypePart(self):
         return _AttrDefinitionTypePart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionNamePart(self):
-        return _AttrDefinitionNamePart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionPart(self):
-        return _AttrDefinitionPart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionPartInner(self):
-        return _AttrDefinitionPartInner(self, self._on_define)
     # Named Fields
     @cached_property
     def sub_defs(self):
@@ -1006,23 +1006,23 @@ class _AttrDefinitionNamePart(_RefinableDecorator):
 
     # Unnamed Fields
     @cached_property
-    def AttrDefinitionRootPart(self):
-        return _AttrDefinitionRootPart(self, self._on_define)
-    @cached_property
-    def AttrDefinitionValuePart(self):
-        return _AttrDefinitionValuePart(self, self._on_define)
-    @cached_property
     def AttrDefinitionTypePart(self):
         return _AttrDefinitionTypePart(self, self._on_define)
     @cached_property
-    def AttrDefinitionNamePart(self):
-        return _AttrDefinitionNamePart(self, self._on_define)
+    def AttrDefinitionPartInner(self):
+        return _AttrDefinitionPartInner(self, self._on_define)
     @cached_property
     def AttrDefinitionPart(self):
         return _AttrDefinitionPart(self, self._on_define)
     @cached_property
-    def AttrDefinitionPartInner(self):
-        return _AttrDefinitionPartInner(self, self._on_define)
+    def AttrDefinitionNamePart(self):
+        return _AttrDefinitionNamePart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionValuePart(self):
+        return _AttrDefinitionValuePart(self, self._on_define)
+    @cached_property
+    def AttrDefinitionRootPart(self):
+        return _AttrDefinitionRootPart(self, self._on_define)
     # Named Fields
     @cached_property
     def sub_defs(self):
@@ -1045,21 +1045,21 @@ class _A(_RefinableDecorator):
 
     # Unnamed Fields
     @cached_property
+    def B(self):
+        return _B(self, self._on_define)
+    @cached_property
     def C(self):
         return _C(self, self._on_define)
     @cached_property
     def D(self):
         return _D(self, self._on_define)
-    @cached_property
-    def B(self):
-        return _B(self, self._on_define)
     # Named Fields
-    @cached_property
-    def under_A_1(self):
-        return _B(self, self._on_define, "under_A_1")
     @cached_property
     def under_A_2(self):
         return _B(self, self._on_define, "under_A_2")
+    @cached_property
+    def under_A_1(self):
+        return _B(self, self._on_define, "under_A_1")
 
 
 class _B(_RefinableDecorator):
@@ -1102,8 +1102,8 @@ class _D(_RefinableDecorator):
 
 
 class _DefinitionRoot(ABC):
-    NameFields = ['Attributes', 'under_A_2', 'sub_defs', 'under_A_1', 'under_C_1', 'ASTs', 'under_B_1', 'sub_classes', 'under_B_2']
-    TypeFields = ['Aspect', 'AttrDefinitionRootPart', 'D', 'Rule', 'AttrDefinitionValuePart', 'Field', 'C', 'AttrDefinitionTypePart', 'ClassNode', 'AttrDefinitionNamePart', 'Grammar', 'AllParent', 'Node', 'ASTNode', 'AttrDefinitionPart', 'B', 'AttrDefinitionPartInner', 'A']
+    NameFields = ['sub_classes', 'under_A_1', 'ASTs', 'under_B_1', 'sub_defs', 'under_B_2', 'under_A_2', 'under_C_1', 'Attributes']
+    TypeFields = ['AttrDefinitionTypePart', 'AttrDefinitionPartInner', 'Field', 'C', 'D', 'A', 'ASTNode', 'B', 'ClassNode', 'Rule', 'AttrDefinitionPart', 'Node', 'AttrDefinitionNamePart', 'AllParent', 'Grammar', 'Aspect', 'AttrDefinitionValuePart', 'AttrDefinitionRootPart']
     AP = None
 
     @staticmethod
@@ -1146,24 +1146,12 @@ class _MetaDefinitions:
         self.__on_define = on_define
         
     @cached_property
-    def Aspect(self):
-        return _Aspect(None, self.__on_define)
+    def AttrDefinitionTypePart(self):
+        return _AttrDefinitionTypePart(None, self.__on_define)
 
     @cached_property
-    def AttrDefinitionRootPart(self):
-        return _AttrDefinitionRootPart(None, self.__on_define)
-
-    @cached_property
-    def D(self):
-        return _D(None, self.__on_define)
-
-    @cached_property
-    def Rule(self):
-        return _Rule(None, self.__on_define)
-
-    @cached_property
-    def AttrDefinitionValuePart(self):
-        return _AttrDefinitionValuePart(None, self.__on_define)
+    def AttrDefinitionPartInner(self):
+        return _AttrDefinitionPartInner(None, self.__on_define)
 
     @cached_property
     def Field(self):
@@ -1174,48 +1162,60 @@ class _MetaDefinitions:
         return _C(None, self.__on_define)
 
     @cached_property
-    def AttrDefinitionTypePart(self):
-        return _AttrDefinitionTypePart(None, self.__on_define)
+    def D(self):
+        return _D(None, self.__on_define)
 
     @cached_property
-    def ClassNode(self):
-        return _ClassNode(None, self.__on_define)
-
-    @cached_property
-    def AttrDefinitionNamePart(self):
-        return _AttrDefinitionNamePart(None, self.__on_define)
-
-    @cached_property
-    def Grammar(self):
-        return _Grammar(None, self.__on_define)
-
-    @cached_property
-    def AllParent(self):
-        return _AllParent(None, self.__on_define)
-
-    @cached_property
-    def Node(self):
-        return _Node(None, self.__on_define)
+    def A(self):
+        return _A(None, self.__on_define)
 
     @cached_property
     def ASTNode(self):
         return _ASTNode(None, self.__on_define)
 
     @cached_property
-    def AttrDefinitionPart(self):
-        return _AttrDefinitionPart(None, self.__on_define)
-
-    @cached_property
     def B(self):
         return _B(None, self.__on_define)
 
     @cached_property
-    def AttrDefinitionPartInner(self):
-        return _AttrDefinitionPartInner(None, self.__on_define)
+    def ClassNode(self):
+        return _ClassNode(None, self.__on_define)
 
     @cached_property
-    def A(self):
-        return _A(None, self.__on_define)
+    def Rule(self):
+        return _Rule(None, self.__on_define)
+
+    @cached_property
+    def AttrDefinitionPart(self):
+        return _AttrDefinitionPart(None, self.__on_define)
+
+    @cached_property
+    def Node(self):
+        return _Node(None, self.__on_define)
+
+    @cached_property
+    def AttrDefinitionNamePart(self):
+        return _AttrDefinitionNamePart(None, self.__on_define)
+
+    @cached_property
+    def AllParent(self):
+        return _AllParent(None, self.__on_define)
+
+    @cached_property
+    def Grammar(self):
+        return _Grammar(None, self.__on_define)
+
+    @cached_property
+    def Aspect(self):
+        return _Aspect(None, self.__on_define)
+
+    @cached_property
+    def AttrDefinitionValuePart(self):
+        return _AttrDefinitionValuePart(None, self.__on_define)
+
+    @cached_property
+    def AttrDefinitionRootPart(self):
+        return _AttrDefinitionRootPart(None, self.__on_define)
 
 
 class _UserDefinition:
@@ -1223,12 +1223,16 @@ class _UserDefinition:
         self.__on_define = on_define
         
     @cached_property
+    def C(self):
+        return _C(None, self.__on_define)
+
+    @cached_property
     def D(self):
         return _D(None, self.__on_define)
 
     @cached_property
-    def C(self):
-        return _C(None, self.__on_define)
+    def A(self):
+        return _A(None, self.__on_define)
 
     @cached_property
     def ASTNode(self):
@@ -1237,10 +1241,6 @@ class _UserDefinition:
     @cached_property
     def B(self):
         return _B(None, self.__on_define)
-
-    @cached_property
-    def A(self):
-        return _A(None, self.__on_define)
 
 
 class _MetaDefinitionRoot(_DefinitionRoot):
@@ -1263,4 +1263,4 @@ Def = _UserDefinitionRoot()
 
 
 # Node Classes
-from .nodes import D,C,ASTNode,B,A
+from .nodes import C,D,A,ASTNode,B
