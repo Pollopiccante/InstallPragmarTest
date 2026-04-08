@@ -1,5 +1,5 @@
 from PRAGMAR.core_aspects.pragmar import ap
-from tests.inherit_name_over_type.attributes import gen_attributes
+from attributes import gen_attributes
 from gen.classes import SomeInnerNode, SomeLeafNode
 
 

@@ -3,7 +3,7 @@ from gen.classes import A, B, C, D
 from gen.classes import Def
 
 
-from tests.most_specific_inheritor.grammar import gen_grammar
+from grammar import gen_grammar
 
 
 # define grammar

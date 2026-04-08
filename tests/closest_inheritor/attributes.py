@@ -2,7 +2,7 @@ from PRAGMAR.core_aspects.pragmar import ap
 from gen.classes import SomeInnerNode
 from gen.classes import Def
 
-from tests.closest_inheritor.grammar import gen_grammar
+from grammar import gen_grammar
 
 
 # define grammar
