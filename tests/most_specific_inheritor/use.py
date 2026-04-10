@@ -1,5 +1,5 @@
 from PRAGMAR.core_aspects.pragmar import ap
-from tests.most_specific_inheritor.attributes import gen_attributes
+from attributes import gen_attributes
 from gen.classes import A, B, C, D
 
 

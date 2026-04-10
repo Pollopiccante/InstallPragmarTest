@@ -2,11 +2,11 @@ import os
 import shutil
 import unittest
 
-
 def scenario(test_function):
     def out_function(self):
+        dir_of_file = os.path.dirname(os.path.realpath(__file__))
         scenario_name = test_function.__name__.replace("test_", "")
-        runner = ScenarioRunner("tests/" + scenario_name)
+        runner = ScenarioRunner(dir_of_file + "/../tests/" + scenario_name)
         test_function(self, runner)
     return out_function
 
@@ -66,7 +66,7 @@ def delete_files_in_folder(folder_path: str):
         except Exception as e:
             print('Failed to delete %s. Reason: %s' % (file_path, e))
 
-class Tests(unittest.TestCase):
+class TestAll(unittest.TestCase):
     @scenario
     def test_most_specific_inheritor(self, runner: ScenarioRunner):
         runner.check(self)
