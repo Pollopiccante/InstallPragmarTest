@@ -20,8 +20,9 @@ def run():
 
     ap.add_ast(tree)
 
-    print(tree.my_dark_aspect_run())
-    print(tree.my_light_aspect_run())
+    print(tree.my_dark_aspect_run_dark())
+    print(tree.my_light_aspect_run_light())
+    print(tree.my_cyan_aspect_run_cyan())
 
 if __name__ == '__main__':
     run()

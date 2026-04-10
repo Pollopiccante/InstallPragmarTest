@@ -6,5 +6,5 @@ print("LIGHT")
 my_aspect = Def.create_aspect("my_light_aspect")
 
 @my_aspect.SomeInnerNode
-def run(node: SomeInnerNode) -> str:
+def run_light(node: SomeInnerNode) -> str:
     return "WALK IN THE LIGHT!"
