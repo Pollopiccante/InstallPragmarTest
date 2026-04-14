@@ -1,6 +1,6 @@
 from PRAGMAR.core_aspects.pragmar import ap
 from attributes import gen_attributes
-from gen.classes import A, B, C, D
+from gen.nodes import A, B, C, D
 
 
 # create AST

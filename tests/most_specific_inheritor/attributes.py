@@ -1,5 +1,5 @@
 from PRAGMAR.core_aspects.pragmar import ap
-from gen.classes import A, B, C, D
+from gen.nodes import A, B, C, D
 from gen.classes import Def
 
 

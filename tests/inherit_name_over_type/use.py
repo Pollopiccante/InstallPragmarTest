@@ -1,6 +1,6 @@
 from PRAGMAR.core_aspects.pragmar import ap
 from attributes import gen_attributes
-from gen.classes import SomeInnerNode, SomeLeafNode
+from gen.nodes import SomeInnerNode, SomeLeafNode
 
 
 # create AST

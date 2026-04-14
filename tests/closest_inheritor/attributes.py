@@ -1,5 +1,5 @@
 from PRAGMAR.core_aspects.pragmar import ap
-from gen.classes import SomeInnerNode
+from gen.nodes import SomeInnerNode
 from gen.classes import Def
 
 from grammar import gen_grammar
