@@ -3,4 +3,5 @@ __pycache__/
 *.py[codz]
 *$py.class
 **/gen/*
+!__init__.py
 !.gitkeep
