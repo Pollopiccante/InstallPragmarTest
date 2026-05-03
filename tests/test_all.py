@@ -31,6 +31,9 @@ class TestAll(unittest.TestCase):
     def test_multible_aspect_files(self):
         test_scenario("multible_aspect_files")
 
+    def test_optional_field_files(self):
+        test_scenario("optional_field")
+
     def test_runtime_only(self):
         from tests.runtime_only.single_file import run
         run()
