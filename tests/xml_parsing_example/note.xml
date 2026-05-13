@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<root xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:schemaLocation="urn:my_namespace note.xsd"
+      xmlns="urn:my_namespace">
+
+    <SomeTreeNode myname="A">
+        <child1>
+            <RequiredInnerNode myname="B">
+                <safe_child>
+                    <SomeTreeNode myname="C">
+
+                    </SomeTreeNode>
+                </safe_child>
+                <child2>
+                    <SomeTreeNode myname="D"/>
+                </child2>
+            </RequiredInnerNode>
+        </child1>
+    </SomeTreeNode>
+
+</root>
