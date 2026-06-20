@@ -4,8 +4,8 @@ from tests.optional_field.gen.nodes import SomeTreeNode
 
 @Def.SomeTreeNode
 def test_attribute(node: SomeTreeNode) -> str:
-    out = f"{node.myname}"
-    for child in node.get_children():
+    out = f"{node.attrib["myname"]}"
+    for child in node.node_children:
         if child:
-            out += child.attributes_test_attribute()
+            out += child.attribute("test_attribute")()
     return out

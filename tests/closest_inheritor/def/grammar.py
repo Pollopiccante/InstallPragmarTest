@@ -1,4 +1,4 @@
-from PRAGMAR.tree import GrammarBuilder
+from PRAGMAR.new_tree import GrammarBuilder
 from PRAGMAR.decorators import def_grammar
 
 @def_grammar

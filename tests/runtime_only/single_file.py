@@ -4,9 +4,8 @@ But is implemented without generated code.
 Grammar and Attribute definitions are dynamically added.
 This is the same Behavior that happens under the hood when generated code is used.
 """
-
 from PRAGMAR.core_aspects.pragmar import load_ap
-from PRAGMAR.tree import TreeNode, InnerNode
+from PRAGMAR.new_tree import AttributedElement
 
 def run():
     ap = load_ap()
@@ -31,11 +30,11 @@ def run():
 
     # use
     def create_some_leaf():
-        return TreeNode("SomeLeafNode")
+        return AttributedElement("SomeLeafNode")
     def create_some_inner(child1, child2):
-        node = InnerNode("SomeInnerNode")
-        node.add_child("child1", child1)
-        node.add_child("child2", child2)
+        node = AttributedElement("SomeInnerNode")
+        node.add_child(child1, "child1")
+        node.add_child(child2, "child2")
         return node
 
     test_leaf1 = create_some_leaf()

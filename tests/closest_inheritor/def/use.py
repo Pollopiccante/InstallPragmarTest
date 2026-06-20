@@ -6,8 +6,8 @@ from tests.closest_inheritor.gen.nodes import SomeLeafNode, SomeInnerNode
 def run(ap):
     test_leaf = SomeLeafNode()
     tree = (
-        SomeInnerNode(
-            SomeInnerNode(
+        SomeInnerNode.save_create(
+            SomeInnerNode.save_create(
                 SomeLeafNode(),
                 test_leaf,
                 "inner_context"),

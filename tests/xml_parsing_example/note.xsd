@@ -18,8 +18,8 @@
 	</xs:complexType>
 	<xs:complexType name="SomeTreeNodeField">
 		<xs:choice>
-			<xs:element name="RequiredInnerNode" type="RequiredInnerNode" />
 			<xs:element name="SomeTreeNode" type="SomeTreeNode" />
+			<xs:element name="RequiredInnerNode" type="RequiredInnerNode" />
 		</xs:choice>
 	</xs:complexType>
 	<xs:element name="root">
