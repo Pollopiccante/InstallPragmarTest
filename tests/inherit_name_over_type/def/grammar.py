@@ -1,5 +1,5 @@
 from PRAGMAR.decorators import def_grammar
-from PRAGMAR.tree import GrammarBuilder
+from PRAGMAR.new_tree import GrammarBuilder
 
 # define grammar
 @def_grammar

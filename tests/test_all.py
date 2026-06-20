@@ -20,13 +20,13 @@ def test_scenario(test_name):
 
 class TestAll(unittest.TestCase):
     def test_most_specific_inheritor(self):
-        test_scenario("closest_inheritor")
+        test_scenario("most_specific_inheritor")
 
     def test_closest_inheritor(self):
         test_scenario("closest_inheritor")
 
     def test_inherit_name_over_type(self):
-        test_scenario("closest_inheritor")
+        test_scenario("inherit_name_over_type")
 
     def test_multible_aspect_files(self):
         test_scenario("multible_aspect_files")
