@@ -1,22 +1,25 @@
 from PRAGMAR.decorators import def_run
-from tests.closest_inheritor.gen.nodes import SomeLeafNode, SomeInnerNode
+from tests.closest_inheritor.gen.nodes import SomeLeafNode, SomeInnerNode, AllParent
+
 
 # create AST
 @def_run
 def run(ap):
+    ap: AllParent = AllParent.wrap(ap)
+
     test_leaf = SomeLeafNode()
     tree = (
-        SomeInnerNode.save_create(
-            SomeInnerNode.save_create(
+        ap.create_SomeInnerNode(
+            ap.create_SomeInnerNode(
                 SomeLeafNode(),
                 test_leaf,
                 "inner_context"),
-            SomeLeafNode(),
+            ap.create_SomeLeafNode(),
             "outer_context"
         )
     )
 
-    ap.add_ast(tree)
+    ap.prag_add_ast(tree)
 
     level_one_context = test_leaf.attributes_level_one_inherit()
     print(level_one_context)

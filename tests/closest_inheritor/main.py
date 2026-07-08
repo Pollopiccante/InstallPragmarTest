@@ -1,5 +1,3 @@
-from sys import setrecursionlimit
-
 from PRAGMAR.main import load_all_parent
 
 if __name__ == "__main__":

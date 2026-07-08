@@ -37,6 +37,9 @@ class TestAll(unittest.TestCase):
     def test_xml_parsing_example(self):
         test_scenario("xml_parsing_example")
 
+    def test_list_test(self):
+        test_scenario("list_test")
+
     def test_runtime_only(self):
         from tests.runtime_only.single_file import run
         run()
