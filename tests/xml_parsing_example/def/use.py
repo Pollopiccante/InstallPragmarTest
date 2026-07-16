@@ -10,7 +10,7 @@ def run(ap: AllParentNode):
 
     ap: AllParent = AllParent.wrap(ap)
 
-    ap.parser_generate_xml_schema(xml_prefix + schema, "my_namespace")
+    ap.parser_generate_xml_schema(xml_prefix + schema, "my_namespace", True)
     tree = ap.parser_add_xml(xml_prefix + xml_file)
 
     res = tree.attribute("test_attribute")()

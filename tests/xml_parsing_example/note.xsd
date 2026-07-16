@@ -1,32 +1,51 @@
-<?xml version='1.0' encoding='utf-8'?>
-<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:my_namespace" elementFormDefault="qualified">
+<xs:schema xmlns:tns="urn:my_namespace" xmlns:xs="http://www.w3.org/2001/XMLSchema" targetNamespace="urn:my_namespace" elementFormDefault="qualified">
+	<xs:complexType name="Node" />
+	<xs:complexType name="ASTNode">
+		<xs:complexContent>
+			<xs:extension base="tns:Node">
+				<xs:sequence />
+			</xs:extension>
+		</xs:complexContent>
+	</xs:complexType>
 	<xs:complexType name="SomeTreeNode">
-		<xs:sequence>
-			<xs:element name="child1" minOccurs="0" maxOccurs="1" type="SomeTreeNodeField" />
-			<xs:element name="child2" minOccurs="0" maxOccurs="1" type="SomeTreeNodeField" />
-		</xs:sequence>
-		<xs:attribute name="myname" type="xs:string" use="required" />
+		<xs:complexContent>
+			<xs:extension base="tns:ASTNode">
+				<xs:sequence>
+					<xs:element name="child1" minOccurs="0" maxOccurs="1" type="tns:SomeTreeNodeField" />
+					<xs:element name="child2" minOccurs="0" maxOccurs="1" type="tns:SomeTreeNodeField" />
+				</xs:sequence>
+				<xs:attribute name="myname" type="xs:string" use="required" />
+			</xs:extension>
+		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="RequiredInnerNode">
 		<xs:complexContent>
-			<xs:extension base="SomeTreeNode">
+			<xs:extension base="tns:SomeTreeNode">
 				<xs:sequence>
-					<xs:element name="safe_child" minOccurs="1" maxOccurs="1" type="SomeTreeNodeField" />
+					<xs:element name="safe_child" minOccurs="1" maxOccurs="1" type="tns:SomeTreeNodeField" />
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
 	<xs:complexType name="SomeTreeNodeField">
 		<xs:choice>
-			<xs:element name="RequiredInnerNode" type="RequiredInnerNode" />
-			<xs:element name="SomeTreeNode" type="SomeTreeNode" />
+			<xs:element name="RequiredInnerNode" type="tns:RequiredInnerNode" />
+			<xs:element name="SomeTreeNode" type="tns:SomeTreeNode" />
+		</xs:choice>
+	</xs:complexType>
+	<xs:complexType name="SomeTreeNodeFieldList">
+		<xs:choice minOccurs="0" maxOccurs="unbounded">
+			<xs:element name="RequiredInnerNode" type="tns:RequiredInnerNode" />
+			<xs:element name="SomeTreeNode" type="tns:SomeTreeNode" />
 		</xs:choice>
 	</xs:complexType>
 	<xs:element name="root">
 		<xs:complexType>
 			<xs:choice>
-				<xs:element name="SomeTreeNode" type="SomeTreeNode" />
-				<xs:element name="RequiredInnerNode" type="RequiredInnerNode" />
+				<xs:element name="Node" type="tns:Node" />
+				<xs:element name="ASTNode" type="tns:ASTNode" />
+				<xs:element name="SomeTreeNode" type="tns:SomeTreeNode" />
+				<xs:element name="RequiredInnerNode" type="tns:RequiredInnerNode" />
 			</xs:choice>
 		</xs:complexType>
 	</xs:element>

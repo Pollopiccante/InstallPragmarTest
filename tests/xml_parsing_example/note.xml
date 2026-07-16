@@ -7,16 +7,15 @@
     <SomeTreeNode myname="A">
         <child1>
             <RequiredInnerNode myname="B">
+                <child2>
+                    <SomeTreeNode myname="C"/>
+                </child2>
                 <safe_child>
-                    <SomeTreeNode myname="C">
+                    <SomeTreeNode myname="D">
 
                     </SomeTreeNode>
                 </safe_child>
-                <child2>
-                    <SomeTreeNode myname="D"/>
-                </child2>
             </RequiredInnerNode>
         </child1>
     </SomeTreeNode>
-
 </root>
