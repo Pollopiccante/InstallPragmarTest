@@ -141,3 +141,12 @@ def gen_grammar(grammar: GrammarBuilder):
     
     """
 
+# duration bracht modi: (cut_loop, cut_blank, stretch)
+# cut_OPTION: take a part of the source video, the length depends on the duration,
+#   cut_loop: if the source is shorter either loop the video to fill the gaps
+#   cut_blank: or insert a blank frame
+
+# stretch: slow down or speed up the source video to match the specified duration
+
+
+# Rotation modes: Center / LeftTop / Custom = (Width, Height as parameters, formula allowed)
