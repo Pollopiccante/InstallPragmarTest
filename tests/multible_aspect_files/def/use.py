@@ -1,24 +1,26 @@
 from PRAGMAR.decorators import def_run
-from PRAGMAR.tree import AllParentNode
+from PRAGMAR.new_tree import AllParentNode
 
-from tests.multible_aspect_files.gen.nodes import SomeInnerNode, SomeLeafNode
+from tests.multible_aspect_files.gen.nodes import SomeInnerNode, SomeLeafNode, AllParent
 
 
 # create AST
 @def_run
 def run(ap: AllParentNode):
+    ap: AllParent = AllParent.wrap(ap)
+
     tree = (
-        SomeInnerNode(
-            SomeInnerNode(
-                SomeLeafNode(),
-                SomeLeafNode(),
+        ap.create_SomeInnerNode(
+            ap.create_SomeInnerNode(
+                ap.create_SomeLeafNode(),
+                ap.create_SomeLeafNode(),
                 "inner_context"),
-            SomeLeafNode(),
+            ap.create_SomeLeafNode(),
             "outer_context"
         ))
 
 
-    ap.add_ast(tree)
+    ap.prag_add_ast(tree)
 
     print(tree.dark_run_dark())
     print(tree.light_run_light())

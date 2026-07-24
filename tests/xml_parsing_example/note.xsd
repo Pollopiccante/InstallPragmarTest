@@ -29,14 +29,14 @@
 	</xs:complexType>
 	<xs:complexType name="SomeTreeNodeField">
 		<xs:choice>
-			<xs:element name="SomeTreeNode" type="tns:SomeTreeNode" />
 			<xs:element name="RequiredInnerNode" type="tns:RequiredInnerNode" />
+			<xs:element name="SomeTreeNode" type="tns:SomeTreeNode" />
 		</xs:choice>
 	</xs:complexType>
 	<xs:complexType name="SomeTreeNodeFieldList">
 		<xs:choice minOccurs="0" maxOccurs="unbounded">
-			<xs:element name="SomeTreeNode" type="tns:SomeTreeNode" />
 			<xs:element name="RequiredInnerNode" type="tns:RequiredInnerNode" />
+			<xs:element name="SomeTreeNode" type="tns:SomeTreeNode" />
 		</xs:choice>
 	</xs:complexType>
 	<xs:element name="root">

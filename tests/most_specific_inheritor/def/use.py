@@ -1,15 +1,33 @@
 from PRAGMAR.decorators import def_run
-from PRAGMAR.tree import AllParentNode
-from tests.most_specific_inheritor.gen.nodes import A, B, C, D
+from PRAGMAR.new_tree import AllParentNode
+from tests.most_specific_inheritor.gen.nodes import A, B, C, D, AllParent
 
 
 @def_run
 def run(ap: AllParentNode):
+    ap: AllParent = AllParent.wrap(ap)
 
-    test_d = D(8)
-    tree = A(B(C(test_d), C(D(6))), B(C(D(5)), C(D(2))))
+    test_d = ap.create_D(8)
+    tree = ap.create_A(
+        ap.create_B(
+            ap.create_C(
+                test_d
+            ),
+            ap.create_C(
+                ap.create_D(6)
+            )
+        ),
+        ap.create_B(
+            ap.create_C(
+                ap.create_D(5)
+            ),
+            ap.create_C(
+                ap.create_D(2)
+            )
+        )
+    )
 
-    ap.add_ast(tree)
+    ap.prag_add_ast(tree)
 
     print(test_d.attributes_test())
 
