@@ -5,6 +5,9 @@ from PRAGMAR.decorators import def_grammar
 @def_grammar
 def gen_grammar(grammar: GrammarBuilder):
 
+    (grammar.Head("FrameRoot")
+     .Field(field_type="Frame", field_name="root_target"))
+
     # everything is a frame
     (grammar.Head("Frame"))
 
@@ -18,9 +21,7 @@ def gen_grammar(grammar: GrammarBuilder):
      .Field(field_type=float, field_name="x")
      .Field(field_type=float, field_name="y"))
     (grammar.Head("Rotate", head_super_type="SingleTargetModification")
-     .Field(field_type=float, field_name="roll")
-     .Field(field_type=float, field_name="pitch")
-     .Field(field_type=float, field_name="yaw"))
+     .Field(field_type=float, field_name="angle"))
     (grammar.Head("Scale", head_super_type="SingleTargetModification")
      .Field(field_type=float, field_name="width")
      .Field(field_type=float, field_name="height"))
@@ -96,6 +97,19 @@ def gen_grammar(grammar: GrammarBuilder):
             )
         )
     )
+    # create command
+    ffmpeg -i evangelion.mp4 -i myface.png -i myface_weird.png -i someFace.png          # inputs in tree order left-to-right
+    -filter_complex "
+    [0:v]trim=start_frame=20:end_frame=41[duration_1]
+    
+    [duration_1][sequence]overlay=0:0:enable='between(t,140,188)'[stack_1]
+    [stack_1][move_transform]overlay=0:0:enable='between(t,450,274)'[video_out]
+    "
+    -map "video_out" -map "audio_out"                                                   # output combine video audio
+    <guid>.mp4
+    
+    
+    
     """
 
     # template definition, and usage as a frame
