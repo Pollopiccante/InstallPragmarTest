@@ -18,10 +18,11 @@ COPY ../dist dist
 
 ENV PYTHONPATH=/InstallPragmarTest/tests
 
-# create venv, install pragmar from local wheel
-RUN python3 -m venv /venv  \
-    && /venv/bin/python -m pip install --find-links=dist --no-index PRAGMAR \
-    && /venv/bin/python -m pip install .
+# create venv, install pragmar from local wheel, and the rest from the net
+RUN python3 -m venv /venv \
+    && /venv/bin/python -m pip install \
+        --find-links=dist \
+        pragmar
 
 # run tests
 WORKDIR InstallPragmarTest

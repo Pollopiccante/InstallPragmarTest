@@ -1,10 +1,9 @@
 from PRAGMAR.decorators import def_run
 from tests.xml_parsing_example.gen.nodes import AllParentNode, AllParent
 
-
 @def_run
-def run(ap: AllParentNode):
-    xml_prefix = "/home/richard/Documents/Projects/PRAGMAR/InstallPragmarTest/tests/xml_parsing_example/"
+def run(ap: AllParentNode):#
+    xml_prefix = "./tests/xml_parsing_example/"
     schema = "note.xsd"
     xml_file = "note.xml"
 
