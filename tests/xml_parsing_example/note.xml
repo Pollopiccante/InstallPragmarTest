@@ -4,14 +4,14 @@
       xsi:schemaLocation="urn:my_namespace note.xsd"
       xmlns="urn:my_namespace">
 
-    <SomeTreeNode myname="A">
+    <SomeTreeNode myname="A" mycounter="1" myflag="true" myslidervalue="0.56">
         <child1>
-            <RequiredInnerNode myname="B">
+            <RequiredInnerNode myname="B" mycounter="2" myslidervalue="0.7878" myflag="true">
                 <child2>
-                    <SomeTreeNode myname="C"/>
+                    <SomeTreeNode myname="C" mycounter="3" myflag="false" myslidervalue="0.9128"/>
                 </child2>
                 <safe_child>
-                    <SomeTreeNode myname="D">
+                    <SomeTreeNode myname="D" mycounter="4" myflag="false" myslidervalue="2983748325.352352">
 
                     </SomeTreeNode>
                 </safe_child>

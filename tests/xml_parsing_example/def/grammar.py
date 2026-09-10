@@ -6,6 +6,9 @@ from PRAGMAR.new_tree import GrammarBuilder
 def my_grammar(grammar: GrammarBuilder):
     (grammar.Head("SomeTreeNode")
      .Field(field_type=str, field_name="myname")
+     .Field(field_type=bool, field_name="myflag")
+     .Field(field_type=int, field_name="mycounter")
+     .Field(field_type=float, field_name="myslidervalue")
      .Field(field_type="SomeTreeNode", field_name="child1", optional=True)
      .Field(field_type="SomeTreeNode", field_name="child2", optional=True))
     (grammar.Head("RequiredInnerNode", head_super_type="SomeTreeNode")
