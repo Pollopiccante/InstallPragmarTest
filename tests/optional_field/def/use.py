@@ -10,11 +10,15 @@ def run(ap: AllParentNode):
 
     tree = ap.create_SomeTreeNode(
         "A",
+        None,
+        None,
         ap.create_SomeTreeNode(
             "B",
             None,
-            ap.create_SomeTreeNode("C",None, None)),
-        ap.create_SomeTreeNode("D", None, None)
+            True,
+            None,
+            ap.create_SomeTreeNode("C",None, None, None, None)),
+        ap.create_SomeTreeNode("D", "loloptional", None, None, None),
     )
 
 

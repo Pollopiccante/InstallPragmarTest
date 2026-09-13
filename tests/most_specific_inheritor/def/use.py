@@ -7,22 +7,22 @@ from tests.most_specific_inheritor.gen.nodes import A, B, C, D, AllParent
 def run(ap: AllParentNode):
     ap: AllParent = AllParent.wrap(ap)
 
-    test_d = ap.create_D(8)
+    test_d = ap.create_D(8.0)
     tree = ap.create_A(
         ap.create_B(
             ap.create_C(
                 test_d
             ),
             ap.create_C(
-                ap.create_D(6)
+                ap.create_D(6.0)
             )
         ),
         ap.create_B(
             ap.create_C(
-                ap.create_D(5)
+                ap.create_D(5.0)
             ),
             ap.create_C(
-                ap.create_D(2)
+                ap.create_D(2.0)
             )
         )
     )

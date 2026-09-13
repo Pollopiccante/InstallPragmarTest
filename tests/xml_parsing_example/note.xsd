@@ -11,13 +11,13 @@
 		<xs:complexContent>
 			<xs:extension base="tns:ASTNode">
 				<xs:sequence>
-					<xs:element name="child1" minOccurs="0" maxOccurs="1" type="tns:SomeTreeNodeFieldList" />
-					<xs:element name="child2" minOccurs="0" maxOccurs="1" type="tns:SomeTreeNodeFieldList" />
+					<xs:element name="child1" minOccurs="0" maxOccurs="1" type="tns:SomeTreeNodeField" />
+					<xs:element name="child2" minOccurs="0" maxOccurs="1" type="tns:SomeTreeNodeField" />
 				</xs:sequence>
-				<xs:attribute name="myname" type="xs:string" use="optional" />
-				<xs:attribute name="myflag" type="xs:boolean" use="optional" />
+				<xs:attribute name="myname" type="xs:string" use="required" />
+				<xs:attribute name="myflag" type="xs:boolean" use="required" />
 				<xs:attribute name="mycounter" type="xs:int" use="optional" />
-				<xs:attribute name="myslidervalue" type="xs:float" use="optional" />
+				<xs:attribute name="myslidervalue" type="xs:float" use="required" />
 			</xs:extension>
 		</xs:complexContent>
 	</xs:complexType>
@@ -25,7 +25,7 @@
 		<xs:complexContent>
 			<xs:extension base="tns:SomeTreeNode">
 				<xs:sequence>
-					<xs:element name="safe_child" minOccurs="0" maxOccurs="1" type="tns:SomeTreeNodeFieldList" />
+					<xs:element name="safe_child" minOccurs="1" maxOccurs="1" type="tns:SomeTreeNodeField" />
 				</xs:sequence>
 			</xs:extension>
 		</xs:complexContent>

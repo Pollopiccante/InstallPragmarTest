@@ -6,12 +6,12 @@
 
     <SomeTreeNode myname="A" mycounter="1" myflag="true" myslidervalue="0.56">
         <child1>
-            <RequiredInnerNode myname="B" mycounter="2" myslidervalue="0.7878" myflag="true">
+            <RequiredInnerNode myname="B" myslidervalue="0.7878" myflag="true">
                 <child2>
                     <SomeTreeNode myname="C" mycounter="3" myflag="false" myslidervalue="0.9128"/>
                 </child2>
                 <safe_child>
-                    <SomeTreeNode myname="D" mycounter="4" myflag="false" myslidervalue="2983748325.352352">
+                    <SomeTreeNode myname="D" myflag="false" myslidervalue="2983748325.352352">
 
                     </SomeTreeNode>
                 </safe_child>

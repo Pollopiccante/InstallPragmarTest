@@ -1,3 +1,5 @@
+from typing import List, Set, Dict
+
 from PRAGMAR.decorators import def_grammar
 from PRAGMAR.new_tree import GrammarBuilder
 
@@ -6,5 +8,7 @@ from PRAGMAR.new_tree import GrammarBuilder
 def my_grammar(grammar: GrammarBuilder):
     (grammar.Head("SomeTreeNode")
      .Field(field_type=str, field_name="myname")
+     .Field(field_type=str, field_name="myoptionalname", optional=True)
+     .Field(field_type=bool, field_name="myoptionalflag", optional=True)
      .Field(field_type="SomeTreeNode", field_name="child1", optional=True)
      .Field(field_type="SomeTreeNode", field_name="child2", optional=True))
